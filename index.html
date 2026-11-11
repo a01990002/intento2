@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blue Launch | Misión Espacial & Proyecto Final</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800;900&family=Rajdhani:wght@500;600;700&family=Cinzel:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Space Particle & Rocket Canvas -->
+    <canvas id="space-canvas"></canvas>
+
+    <!-- Glowing Nebula Overlay -->
+    <div class="nebula-glow"></div>
+
+    <div class="site-wrapper">
+        <!-- Top Mission Header -->
+        <header class="mission-header">
+            <div class="logo-group">
+                <div class="logo-shield">
+                    <svg viewBox="0 0 100 100" class="shield-svg">
+                        <circle cx="50" cy="50" r="45" fill="#0D183E" stroke="#D4AF37" stroke-width="3"/>
+                        <path d="M50 80 L50 40" stroke="#D4AF37" stroke-width="4" stroke-linecap="round"/>
+                        <path d="M50 62 L33 48 L33 33" stroke="#D4AF37" stroke-width="2.5" fill="none"/>
+                        <path d="M50 52 L67 38 L67 23" stroke="#D4AF37" stroke-width="2.5" fill="none"/>
+                        <circle cx="33" cy="30" r="3.5" fill="#FFFFFF" stroke="#D4AF37" stroke-width="1.5"/>
+                        <circle cx="67" cy="20" r="3.5" fill="#FFFFFF" stroke="#D4AF37" stroke-width="1.5"/>
+                        <polygon points="50,12 42,25 58,25" fill="#D4AF37"/>
+                    </svg>
+                </div>
+                <div class="brand-text">
+                    <h1>BLUE LAUNCH</h1>
+                    <span class="sub">AEROSPACE & TECH • MISSION 2026</span>
+                </div>
+            </div>
+            <div class="telemetry-pill">
+                <span class="pulse-dot"></span> ESTADO: PRE-IGNICIÓN 100%
+            </div>
+        </header>
+
+        <!-- Hero Mission Section -->
+        <section class="hero-section">
+            <div class="hologram-badge">
+                <span class="badge-icon">🚀</span> ENTREGA DE PROYECTO FINAL • TEC DE MONTERREY
+            </div>
+
+            <div class="slogan-card">
+                <div class="corner-tl"></div><div class="corner-tr"></div>
+                <div class="corner-bl"></div><div class="corner-br"></div>
+                <span class="quote-sign">“</span>
+                <h2 class="slogan-main">
+                    El cielo ya no es el límite; es solo nuestro punto de partida. <br>
+                    <span class="highlight-slogan">Ingenia el futuro, desafía la gravedad y despega hacia lo extraordinario.</span>
+                </h2>
+            </div>
+
+            <p class="hero-subtext">
+                Centro de control de misión activado. Monitoreando vectores de innovación, algoritmos espaciales 
+                y sistemas autónomos rumbo al lanzamiento definitivo de fin de mes.
+            </p>
+        </section>
+
+        <!-- Futuristic Launch Countdown -->
+        <section class="countdown-console">
+            <div class="console-header">
+                <div class="radar-scan"></div>
+                <h3>SECUENCIA DE IGNICIÓN • T-MINUS HASTA FIN DE NOVIEMBRE</h3>
+            </div>
+
+            <div class="countdown-grid">
+                <div class="time-node">
+                    <span id="days" class="number">00</span>
+                    <span class="label">DÍAS</span>
+                </div>
+                <div class="time-separator">:</div>
+                <div class="time-node">
+                    <span id="hours" class="number">00</span>
+                    <span class="label">HORAS</span>
+                </div>
+                <div class="time-separator">:</div>
+                <div class="time-node">
+                    <span id="minutes" class="number">00</span>
+                    <span class="label">MINUTOS</span>
+                </div>
+                <div class="time-separator">:</div>
+                <div class="time-node active-second">
+                    <span id="seconds" class="number">00</span>
+                    <span class="label">SEGUNDOS</span>
+                </div>
+            </div>
+
+            <div class="console-actions">
+                <button id="sound-btn" class="cyber-btn">
+                    <span class="btn-glow"></span>
+                    <span class="icon">🔊</span>
+                    <span id="sound-text">ACTIVAR AUDIO Y RUMOR DE MOTORES</span>
+                </button>
+            </div>
+        </section>
+
+        <!-- Mission Parameters Grid -->
+        <section class="params-grid">
+            <div class="param-box">
+                <h4>🛰️ TELEMETRÍA TÉCNICA</h4>
+                <p>Simulaciones dinámicas en MATLAB, cálculo estructural y control aerodinámico integrado.</p>
+            </div>
+            <div class="param-box">
+                <h4>⚡ IDENTIDAD VISUAL</h4>
+                <p>Diseño basado en el estándar Azul Profundo (#0D183E) y Oro Launch (#D4AF37) con precisión milimétrica.</p>
+            </div>
+            <div class="param-box">
+                <h4>🎯 OBJETIVO CUMPLIDO</h4>
+                <p>Desarrollo integral de sistemas mecatrónicos listos para impactar la industria aeroespacial.</p>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="site-footer">
+            <p>Blue Launch © 2026 • Innovación Digital en Órbita. Diseñado para la gloria del proyecto final.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
